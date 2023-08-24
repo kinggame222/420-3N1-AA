@@ -3,6 +3,11 @@
 DATE = 30052023
 
 
+def aurevoir(nom):
+    """Dit Au revoir."""
+    print("Au revoir " + nom)
+
+
 def bonjour(nom):
     """Dit Bonjour."""
     print("Bonjour " + nom)

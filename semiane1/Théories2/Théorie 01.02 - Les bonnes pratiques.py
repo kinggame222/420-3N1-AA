@@ -23,8 +23,8 @@ Le PEP 8 fournit des directives sur la façon de formater le code Python pour le
     2.  Les commentaires qui suivent le code sur la même ligne sont à éviter le plus possible et doivent être séparés du 
         code par au moins deux espaces.
 '''
-print("Hello, World!")    # Ceci est aussi un commentaire sur une ligne
-print("Hello, World!")    # Ceci est aussi un commentaire sur une ligne
+print("Hello, World!")  # Ceci est aussi un commentaire sur une ligne
+print("Hello, World!")  # Ceci est aussi un commentaire sur une ligne
 """
     3.  La PEP 8 recommande très fortement d'écrire les commentaires en anglais, sauf si vous êtes à 120% sûr que votre 
         code ne sera lu que par des francophones.
@@ -92,13 +92,16 @@ quelques points importants à connaître sur l'indentation en Python :
 
 Exemple :
 '''
+
+
 def indentation_01():
-    if 1==1: #Peu importe la condition
+    if 1 == 1:  # Peu importe la condition
         # Instructions indentées à l'intérieur du bloc if
         print("Condition est vraie")
         print("Autre instruction")
     # Fin du bloc if, retour à l'indentation précédente
     print("Fin du programme")
+
 
 '''
     4.  Structure conditionnelle et boucles : Les structures conditionnelles telles que `if`, `else`, `elif`, ainsi que 
@@ -106,12 +109,15 @@ def indentation_01():
         contenu de ces blocs est exécuté en fonction de la condition ou de l'itération.
 Exemple :
 '''
+
+
 def indentation_02():
-   for i in range(5):
-       # Instructions indentées à l'intérieur de la boucle for
-       print(i)
-   # Fin de la boucle for, retour à l'indentation précédente
-   print("Fin du programme")
+    for i in range(5):
+        # Instructions indentées à l'intérieur de la boucle for
+        print(i)
+    # Fin de la boucle for, retour à l'indentation précédente
+    print("Fin du programme")
+
 
 '''
 L'indentation correcte est essentielle en Python pour garantir que le code soit correctement structuré et fonctionne 
@@ -147,17 +153,24 @@ Python.
 6.  Pensez à donner à vos variables des noms qui ont du sens. Évitez autant que possible les a1, a2, i, truc, toto... 
     Les noms de variables à un caractère sont néanmoins autorisés pour les boucles et les indices :
 '''
+
+
 def nommage_01():
     ma_liste = [1, 3, 5, 7, 9, 11]
     for i in range(len(ma_liste)):
         print(ma_liste[i])
+
+
 '''
     Bien sûr, une écriture plus simplifié de l'exemple précédent permet de se débarrasser de l'indice i :
 '''
+
+
 def nommage_02():
     ma_liste = [1, 3, 5, 7, 9, 11]
     for entier in ma_liste:
         print(entier)
+
 
 '''
     Enfin, des noms de variable à une lettre peuvent être utilisés lorsque cela a un sens mathématique (par exemple, 
@@ -171,6 +184,8 @@ def nommage_02():
 1.  La PEP 8 recommande d'entourer les opérateurs (+, -, /, *, ==, !=, >=, not, in, and, or...) d'un espace avant et 
     d'un espace après.
 '''
+
+
 def espace_01():
     # code recommandé :
     ma_variable = 3 + 7
@@ -178,13 +193,16 @@ def espace_01():
     mon_texte == ma_variable
 
     # code non recommandé :
-    ma_variable=3+7
-    mon_texte="souris"
-    mon_texte== ma_variable
+    ma_variable = 3 + 7
+    mon_texte = "souris"
+    mon_texte == ma_variable
+
 
 '''
 2.  Pas d'espace à l'intérieur de crochets, d'accolades et de parenthèse.
 '''
+
+
 def espace_02():
     # code recommandé :
     ma_liste[1]
@@ -197,9 +215,12 @@ def espace_02():
     {"clé"}
     ma_fonction(argument)
 
+
 '''
 3.  Pas d'espace avant la parenthèse ouvrante d'une fonction ou le crochet ouvrant d'une liste ou d'un dictionnaire.
 '''
+
+
 def espace_03():
     # code recommandé :
     ma_liste[1]
@@ -212,9 +233,12 @@ def espace_03():
     {"clé"}
     ma_fonction(argument)
 
+
 '''
 4.  On met un espace après les caractères ':' et ',' (mais pas avant) ':'.
 '''
+
+
 def espace_04():
     # code recommandé :
     ma_liste = [1, 2, 3]
@@ -225,9 +249,12 @@ def espace_04():
     mon_dico = {"clé1": "valeur1", "clé2": "valeur2"}
     ma_fonction(argument1, argument2)
 
+
 '''
 5.  Par contre, pour les tranches de listes, on ne met pas d'espace autour du ':'.
 '''
+
+
 def espace_05():
     ma_liste = [1, 3, 5, 7, 9, 1]
     # code recommandé :
@@ -239,9 +266,12 @@ def espace_05():
     ma_liste[1: 4:2]
     ma_liste[::2]
 
+
 '''
 6.  On n'ajoute pas plusieurs espaces autour du '=' ou des autres opérateurs.
 '''
+
+
 def espace_06():
     # code recommandé :
     x1 = 1
@@ -252,6 +282,7 @@ def espace_06():
     x2 = 3
     x_old = 5
 
+
 ########################################################################################################################
 # 01.07 - Longeur de ligne
 ########################################################################################################################
@@ -259,17 +290,22 @@ def espace_06():
 Pour des raison historique et de lisibilité, une ligne de code ne doit pas dépasser 79 caractère.
     1.  Pour écrire une ligne de code sur plusieurs lignes de votre éditeurs, pn peut utiliser le backslash: \
 '''
+
+
 def longueur_01():
     ma_variable = 3
     if ma_variable > 1 and ma_variable < 10 \
-    and ma_variable % 2 == 1 and ma_variable % 3 == 0:
+            and ma_variable % 2 == 1 and ma_variable % 3 == 0:
         print(f"Fonction longueur_01() : ma variable vaut {ma_variable}")
+
 
 '''
     2.  À l'intérieur d'une parenthèse, on peut revenir à la ligne sans utiliser le caractère \ . C'est aussi pratiques 
         pour répartir sur plusieurs lignes une chaîne de caractères qui sera affichée sur une seule ligne. Même chose 
         pour évaluer une expression trop longue.
 '''
+
+
 def longueur_02(argument_1, argument_2,
                 argument_3, argument_4):
     return argument_1 + argument_2
@@ -278,12 +314,14 @@ def longueur_02(argument_1, argument_2,
           "CGGGTAACGCCATGTACATT")
 
     if (ma_variable > 1 and ma_variable < 10
-    and ma_variable % 2 == 1 and ma_variable % 3 == 0):
+            and ma_variable % 2 == 1 and ma_variable % 3 == 0):
         print(f"Fonction longueur_02() : ma variable vaut {ma_variable}")
+
 
 def longueur_03():
     longueur_02("texte très long", "tigre",
                 "singe", "souris")
+
 
 ########################################################################################################################
 # 01.08 - Lignes vides
@@ -307,8 +345,10 @@ la syntaxe et la structure du langage Python. Voici la liste des mots réservés
 '''
 import keyword
 
+
 def mots_reserve():
     print(keyword.kwlist)
+
 
 '''
 Ces mots réservés sont utilisés pour des constructions spécifiques dans le code Python, tels que les déclarations de 
@@ -367,11 +407,13 @@ du programme.
 Par exemple, considérons le code suivant dans un fichier nommé `example.py` :
 '''
 
+
 def main():
     print("Ceci est le programme principal.")
 
+
 if __name__ == "__main__":
-    main()
+    # main()
     # affiche_message()
     # espace_01()
     # espace_02()
@@ -379,7 +421,7 @@ if __name__ == "__main__":
     # espace_04()
     # espace_05()
     # espace_06()
-    # indentation_01()
+    indentation_01()
     # indentation_02()
     # longueur_01()
     # longueur_03()
