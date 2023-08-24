@@ -23,8 +23,8 @@ Le PEP 8 fournit des directives sur la façon de formater le code Python pour le
     2.  Les commentaires qui suivent le code sur la même ligne sont à éviter le plus possible et doivent être séparés du 
         code par au moins deux espaces.
 '''
-print("Hello, World!")  # Ceci est aussi un commentaire sur une ligne
-
+print("Hello, World!")    # Ceci est aussi un commentaire sur une ligne
+print("Hello, World!")    # Ceci est aussi un commentaire sur une ligne
 """
     3.  La PEP 8 recommande très fortement d'écrire les commentaires en anglais, sauf si vous êtes à 120% sûr que votre 
         code ne sera lu que par des francophones.
