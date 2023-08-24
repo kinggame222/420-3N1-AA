@@ -54,17 +54,11 @@ total de votre monnaie est:  116.98 dollars
 
 '''
 Concevoir l'algorithme qui produira la facture d'un repas dans un restaurant.
-
 - On devra tenir compte des éléments suivants: Apéritif, Entrée, Plat principal, Dessert et Bouteille de vin.
-
 - À partir de ces montants, il faut calculer le sous-total, y ajouter un pourboire de 15%, les taxes provinciale (9.975%) et fédérale de 5%.
-
 - La facture doit avoir :
-
 o L’adresse de l’entreprise
-
 o La liste des articles avec leur prix
-
 o Le sous-total, les taxes, le pourboire et le montant total
 '''
 
@@ -93,9 +87,9 @@ def facture():
 '''
 Votre voisin qui est propriétaire d’une entreprise de couvre plancher et il aimerait avoir 
 une application pour calculer la quantité et le prix des tuiles de céramique à poser chez un client.
- Pour ce faire, le client vous donne la dimension de l’espace à couvrir (longueur et largeur),
-  la dimension d’une tuile de céramique et le prix d’une boite ainsi que le nombre de tuiles compris dans une boite.
-   N’oubliez pas d’inclure un pourcentage de perte de 5 %.
+Pour ce faire, le client vous donne la dimension de l’espace à couvrir (longueur et largeur),
+la dimension d’une tuile de céramique et le prix d’une boite ainsi que le nombre de tuiles compris dans une boite.
+N’oubliez pas d’inclure un pourcentage de perte de 5 %.
 
 Ensuite, créer la soumission sous le même format que la facture du restaurant, sans le pourboire.
 '''
@@ -119,10 +113,11 @@ def couvre_plancher():
 
 
 # 06 – Vérification de la note finale
-'''Calculer et afficher la note finale d’un étudiant. L’étudiant a fait deux 
+'''
+Calculer et afficher la note finale d’un étudiant. L’étudiant a fait deux 
 travaux notés sur 5 points qui compteront pour chacun 15% de la note finale.
- De plus, l’examen qui est noté sur 75 points correspond à 30% de la note finale.
- Et pour finir, l’épreuve terminale de cours sera notée sur 105 points et compte pour 40% de la note finale.'''
+De plus, l’examen qui est noté sur 75 points correspond à 30% de la note finale.
+Et pour finir, l’épreuve terminale de cours sera notée sur 105 points et compte pour 40% de la note finale.'''
 
 
 def note_final():
@@ -134,8 +129,10 @@ def note_final():
 
 
 # 07 – Conversion
-'''Vous devez effectuer une conversion entre chacune de mesures suivantes 
-selon le choix de l’utilisateur: pouce, pied, millimètre, centimètre, mètre et kilomètre'''
+'''
+Vous devez effectuer une conversion entre chacune de mesures suivantes 
+selon le choix de l’utilisateur: pouce, pied, millimètre, centimètre, mètre et kilomètre
+'''
 
 
 def conversion():
@@ -213,7 +210,8 @@ Pour ce faire, chaque client fournit toujours la longueur et la largeur en pieds
 Ensuite, créer la facture sous le même format que la facture du restaurant, sans le pourboire.
 '''
 
-#08 – Gazon-Alma
+
+# 08 – Gazon-Alma
 def gazon_alma():
     print("Bienvenue au gazon alma")
     longueur = float(input("longueur: "))
