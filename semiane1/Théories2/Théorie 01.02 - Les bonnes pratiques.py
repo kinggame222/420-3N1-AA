@@ -195,7 +195,7 @@ def espace_01():
     # code non recommandé :
     ma_variable = 3 + 7
     mon_texte = "souris"
-    mon_texte==ma_variable
+    mon_texte == ma_variable
 
 
 '''
@@ -378,7 +378,7 @@ Voici quelques exemples courants de séquences d'échappement en Python : COLLER
     3.  `\ \` : Antislash
         Utilisé pour insérer un antislash dans une chaîne de caractères.
 
-    4.  `\ '` : Guillemet simple
+    4.  `\'` : Guillemet simple
         Utilisé pour insérer un guillemet simple dans une chaîne de caractères délimitée par des guillemets simples.
 
     5.  `\ "` : Guillemet double
