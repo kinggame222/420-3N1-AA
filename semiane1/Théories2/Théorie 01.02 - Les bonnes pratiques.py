@@ -195,7 +195,7 @@ def espace_01():
     # code non recommandé :
     ma_variable = 3 + 7
     mon_texte = "souris"
-    mon_texte == ma_variable
+    mon_texte==ma_variable
 
 
 '''
@@ -421,12 +421,12 @@ if __name__ == "__main__":
     # espace_04()
     # espace_05()
     # espace_06()
-    indentation_01()
+    # indentation_01()
     # indentation_02()
     # longueur_01()
     # longueur_03()
     # mots_reserve()
-    # nommage_01()
+    nommage_01()
     # nommage_02()
 
 '''
