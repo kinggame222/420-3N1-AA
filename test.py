@@ -1,3 +1,1 @@
-
-test = 12
-print(test)
+print("hello world")
