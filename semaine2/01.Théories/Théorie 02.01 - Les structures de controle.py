@@ -268,6 +268,7 @@ def boucle_exemple11():
     while i <= n:
         factorielle *= i
         i += 1
+        print(f"i = {i} et factorielle = {factorielle}")
     print(f"La factorielle de {n} est {factorielle}")
 
 
@@ -340,7 +341,7 @@ def range3():
 # 02. - Exécution du code
 ########################################################################################################################
 if __name__ == "__main__":
-    condition1()
+   # condition1()
     # condition2()
     # condition3()
     # condition4()
@@ -349,15 +350,15 @@ if __name__ == "__main__":
     # boucle_exemple2()
     # boucle_exemple3()
     # boucle_exemple4()
-    # boucle_exemple5()
+     #boucle_exemple5()
     # boucle_exemple6()
     # boucle_exemple7()
-    # boucle_exemple8()
+   # boucle_exemple8()
     # boucle_exemple9()
     # boucle_exemple10()
-    # boucle_exemple11()
+    #q boucle_exemple11()
     # boucle_infini()
-    # boucle_input()
+     boucle_input()
     # range1()
     # range2()
     # range3()
