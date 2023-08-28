@@ -195,18 +195,14 @@ def conversion():
 
 #
 '''
-La compagnie Gazon-Alma est une petite entreprise régionale qui fait l’entretien des gazons pour ces clients. Pour bien organiser son travail, l’entreprise aimerait avoir un outil (une application) qui lui permettrait d’estimer :
-
-ü le temps nécessaire (en minute) pour tondre le gazon d’un cours rectangulaire;
-
-ü le nombre de sacs d’engrais nécessaire pour recouvrir le gazon;
-
-ü le prix total de l’engrais.
-
-ü
-
-Pour ce faire, chaque client fournit toujours la longueur et la largeur en pieds de son terrain. Il faut 25 secondes (en moyenne) pour tondre un m2 de superficie de gazon. Chaque sac d’engrais couvre 100 m2 et coûte 3.50$.
-
+La compagnie Gazon-Alma est une petite entreprise régionale qui fait l’entretien des gazons pour ces clients. 
+Pour bien organiser son travail, l’entreprise aimerait avoir un outil (une application) qui lui permettrait d’estimer :
+le temps nécessaire (en minute) pour tondre le gazon d’un cours rectangulaire;
+le nombre de sacs d’engrais nécessaire pour recouvrir le gazon;
+le prix total de l’engrais.
+Pour ce faire, chaque client fournit toujours la longueur et la largeur en pieds de son terrain. 
+Il faut 25 secondes (en moyenne) pour tondre un m2 de superficie de gazon. 
+Chaque sac d’engrais couvre 100 m2 et coûte 3.50$.
 Ensuite, créer la facture sous le même format que la facture du restaurant, sans le pourboire.
 '''
 
