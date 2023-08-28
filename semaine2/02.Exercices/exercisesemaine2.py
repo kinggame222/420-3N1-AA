@@ -183,7 +183,6 @@ Créez un script qui dessine une pyramide dessinée à partir d'un nombre arbitr
 def Pyramide():
     Nombre = int(input('Entrez un nombre pour la grandeur de la pyramide : '))
     for i in range(1, Nombre):
-
         print(
             ' ' * (Nombre - i) +
             '§' * (i - 1) + '|' +
@@ -341,10 +340,10 @@ if __name__ == "__main__":
     # afficherProduit()
     # triangle()
     # triangleInversé()
-     Pyramide()
-    # TableDeMultiplication()
-    # JoursDeLaSemaine(semaine)
-    # Saisons()
-    # tableDeMultiplicationPar8()
-    # nombresPairs()
-   # gestionnaireDeTaches()
+    Pyramide()
+# TableDeMultiplication()
+# JoursDeLaSemaine(semaine)
+# Saisons()
+# tableDeMultiplicationPar8()
+# nombresPairs()
+# gestionnaireDeTaches()
