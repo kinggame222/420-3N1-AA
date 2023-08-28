@@ -299,16 +299,19 @@ def gestionnaireDeTaches():
         if choix == 1:
             # ajoute une tache a la liste
             taches.append(input('Entrez une tâche : '))
+
         elif choix == 2:
             # affiche les taches
             for i in range(len(taches)):
                 print(i + 1, taches[i])
+
         elif choix == 3:
             # supprime une tache
             for i in range(len(taches)):
                 print(i + 1, taches[i])
             tache = int(input('Entrez le numéro de la tâche terminée : '))
             taches.pop(tache - 1)
+
         elif choix == 4:
             # quitte le programme
             print('fermeture du programme')
