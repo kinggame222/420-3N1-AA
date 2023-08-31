@@ -264,7 +264,7 @@ Affichez la table de multiplication par 8 en une seule commande avec les instruc
 
 
 def tableDeMultiplicationPar8():
-    # multiplie par 8 ... 8 fois
+    # multiplie par 8 ... 8 fois ?
     print(list(range(8, 81, 8)))
 
 
@@ -325,7 +325,6 @@ def gestionnaireDeTaches():
         else:
             # si c'est invalide
             print('Choix invalide')
-
 
 semaine = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']
 liste = ['vache', 'souris', 'levure', 'bactérie']
