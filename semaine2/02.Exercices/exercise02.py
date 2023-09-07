@@ -19,13 +19,10 @@ import openpyxl
 import pandas as pd
 
 
-
-def ajouterJoueur(liste):
+def ajouterJoueur(liste, wb):
     nom = input("Entrez le nom du joueur: ")
     points = int(input("Entrez le nombre de points du joueur: "))
-    wb = openpyxl.load_workbook("Exercice 02.03 - Canadiens de Montreal.xlsx")
-    ws = wb.active
-    ws.append([nom, points])
+    wb.active.append([nom, points])
     wb.save("Exercice 02.03 - Canadiens de Montreal.xlsx")
     return liste
 
@@ -49,12 +46,10 @@ Si le nom du joueur est présent dans la liste, mettez-le à jour.
 '''
 
 
-def modifierNom(liste):
+def modifierNom(liste, wb):
     nom = input("Entrez le nom du joueur à modifier: ")
     nouveauNom = input("Entrez le nouveau nom du joueur: ")
-    wb = openpyxl.load_workbook("Exercice 02.03 - Canadiens de Montreal.xlsx")
-    ws = wb.active
-    for row in ws.iter_rows():
+    for row in wb.active.iter_rows():
         for cell in row:
             if cell.value == nom:
                 cell.value = nouveauNom
@@ -74,14 +69,13 @@ Si le nom du joueur est présent dans la liste, mettez-les points à jour.
 def ModifierPoints(liste):
     nom = input("Entrez le nom du joueur à modifier: ")
     points = int(input("Entrez le nouveau nombre de points du joueur: "))
-    wb = openpyxl.load_workbook("Exercice 02.03 - Canadiens de Montreal.xlsx")
-    ws = wb.active
-    sheet = wb["Feuil1"]
-    for row in ws.iter_rows():
+
+    for row in wb.active.iter_rows():
         for cell in row:
             if cell.value == nom:
-                sheet.cell(row=cell.row, column=2).value = points
+                wb["Feuil1"].cell(row=cell.row, column=2).value = points
 
+    # sauvegarder le fichier
     wb.save("Exercice 02.03 - Canadiens de Montreal.xlsx")
     return liste
 
@@ -113,23 +107,20 @@ Si le joueur est présent dans la liste, supprimez-le.
 '''
 
 
-def supprimerJoueur(liste):
+def supprimerJoueur(liste, wb, feuille):
     nom = input("Entrez le nom du joueur à supprimer: ")
-    wb = openpyxl.load_workbook("Exercice 02.03 - Canadiens de Montreal.xlsx")
-    ws = wb.active
-
-    sheet = wb["Feuil1"]
-    for row in ws.iter_rows():
+    for row in wb.active.iter_rows():
         for cell in row:
             if cell.value == nom:
-                sheet.cell(row=cell.row, column=1).value = ""
-                sheet.cell(row=cell.row, column=2).value = ""
-
+                feuille.cell(row=cell.row, column=1).value = ""
+                feuille.cell(row=cell.row, column=2).value = ""
+    # sauvegarder le fichier
     wb.save("Exercice 02.03 - Canadiens de Montreal.xlsx")
+    return liste
 
 
 def AffichageJoueur():
-    choix = -1
+    choixBase = -1
     print("\nGestionnaire équipe de hockey")
     print("-----------------------------")
     print("1. Ajouter un joueur ")
@@ -139,25 +130,26 @@ def AffichageJoueur():
     print("5. Statistiques de l’équipe ")
     print("6. Supprimer un joueur ")
     print("7. Quitter")
-    choix = input("\nChoisissez une option :")
-    return choix
+    choixBase = input("\nChoisissez une option :")
+    return choixBase
 
 
 if __name__ == "__main__":
-
     choixOption = -1
     liste = pd.read_excel("Exercice 02.03 - Canadiens de Montreal.xlsx")
+    wb = openpyxl.load_workbook("Exercice 02.03 - Canadiens de Montreal.xlsx")
+    feuille = wb["Feuil1"]
     while choixOption != "7":
         choixOption = AffichageJoueur()
         match choixOption:
             case "1":
-                ajouterJoueur(liste)
+                ajouterJoueur(liste, wb)
 
             case "2":
                 afficherListe(liste)
 
             case "3":
-                modifierNom(liste)
+                modifierNom(liste, wb)
 
             case "4":
                 ModifierPoints(liste)
@@ -166,7 +158,7 @@ if __name__ == "__main__":
                 Statistiques(liste)
 
             case "6":
-                supprimerJoueur(liste)
+                supprimerJoueur(liste, wb, feuille)
 
             case "7":
                 choix = "7"
