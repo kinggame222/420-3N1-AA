@@ -17,6 +17,7 @@ i. Indice : Listes imbriquées
 '''
 import openpyxl
 import pandas as pd
+from numpy import select
 
 
 def ajouterJoueur(liste, wb):
@@ -35,7 +36,8 @@ Chaque ligne contient le nom du joueur et son nombre de points.
 
 
 def afficherListe(liste):
-    print(liste)
+    Df2 = liste.sort_values(by=['Points'], ascending=False).dropna(axis=0)
+    print(Df2)
 
 
 '''
@@ -48,11 +50,14 @@ Si le nom du joueur est présent dans la liste, mettez-le à jour.
 
 def modifierNom(liste, wb):
     nom = input("Entrez le nom du joueur à modifier: ")
-    nouveauNom = input("Entrez le nouveau nom du joueur: ")
-    for row in wb.active.iter_rows():
-        for cell in row:
-            if cell.value == nom:
-                cell.value = nouveauNom
+    if liste['Nom du joueur'].isin([nom]).any():
+        nouveauNom = input("Entrez le nouveau nom du joueur: ")
+        for row in wb.active.iter_rows():
+            for cell in row:
+                if cell.value == nom:
+                    cell.value = nouveauNom
+    else:
+        print("Le joueur n'existe pas")
 
     wb.save("Exercice 02.03 - Canadiens de Montreal.xlsx")
     return liste
@@ -68,12 +73,18 @@ Si le nom du joueur est présent dans la liste, mettez-les points à jour.
 
 def ModifierPoints(liste):
     nom = input("Entrez le nom du joueur à modifier: ")
-    points = int(input("Entrez le nouveau nombre de points du joueur: "))
+    if liste['Nom du joueur'].isin([nom]).any():
 
-    for row in wb.active.iter_rows():
-        for cell in row:
-            if cell.value == nom:
-                wb["Feuil1"].cell(row=cell.row, column=2).value = points
+        points = int(input("Entrez le nouveau nombre de points du joueur: "))
+
+        for row in wb.active.iter_rows():
+            for cell in row:
+                if cell.value == nom:
+                    wb["Feuil1"].cell(row=cell.row, column=2).value = points
+            else:
+                print("Le joueur n'existe pas")
+    else:
+        print("Le joueur n'existe pas")
 
     # sauvegarder le fichier
     wb.save("Exercice 02.03 - Canadiens de Montreal.xlsx")
@@ -92,11 +103,12 @@ iv. Trouvez la moyenne de points des joueurs.
 
 def Statistiques(liste):
     print("Le nombre de joueurs dans l'équipe est de: ", len(liste))
-    if len(liste) > 0:
+    if len(liste) >= 1:
+        df2 = liste['Nom du joueur'].values[liste['Points'].values.argmin()]
         print("Le joueur avec le plus de points est: ",
               liste['Nom du joueur'].values[liste['Points'].values.argmax()])
         print("Le joueur avec le moins de points est: ",
-              liste['Nom du joueur'].values[liste['Points'].values.argmin()])
+              df2)
         print("La moyenne de points des joueurs est de: ", liste['Points'].mean())
 
 
@@ -114,6 +126,8 @@ def supprimerJoueur(liste, wb, feuille):
             if cell.value == nom:
                 feuille.cell(row=cell.row, column=1).value = ""
                 feuille.cell(row=cell.row, column=2).value = ""
+            else:
+                print("Le joueur n'existe pas")
     # sauvegarder le fichier
     wb.save("Exercice 02.03 - Canadiens de Montreal.xlsx")
     return liste
@@ -136,10 +150,11 @@ def AffichageJoueur():
 
 if __name__ == "__main__":
     choixOption = -1
-    liste = pd.read_excel("Exercice 02.03 - Canadiens de Montreal.xlsx")
-    wb = openpyxl.load_workbook("Exercice 02.03 - Canadiens de Montreal.xlsx")
-    feuille = wb["Feuil1"]
+
     while choixOption != "7":
+        liste = pd.read_excel("Exercice 02.03 - Canadiens de Montreal.xlsx")
+        wb = openpyxl.load_workbook("Exercice 02.03 - Canadiens de Montreal.xlsx")
+        feuille = wb["Feuil1"]
         choixOption = AffichageJoueur()
         match choixOption:
             case "1":
