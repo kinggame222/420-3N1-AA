@@ -1,0 +1,1411 @@
+{
+	"status": "OK",
+	"message": "Successfully Read Bag Data file",
+	"data": {
+		"status": "OK",
+		"message": "Write Bag Data To File",
+		"lastUpdated": "2020-12-16 1:39:20 pm",
+		"data": [
+			{
+				"Bag Manufacturer / Series Name": "Allcornhole All Slide 2.0",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "74"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Allcornhole All Slide",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Allcornhole Game Changer",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "64"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Allcornhole GC Steady",
+				"Speed Friction Fastest Side": "86",
+				"Speed Friction Other Side": "55"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Allcornhole GC Steady 2.0",
+				"Speed Friction Fastest Side": "86",
+				"Speed Friction Other Side": "57"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Allcornhole GC Trifecta",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "59"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Allcornhole Slide Rite",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "12"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Allcornhole Slide Rite 2.0",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "79"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Alpha Bags Jackal",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "78"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Alpha Bags King Alpha",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Alpha Bags Spitfire",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Alpha Bags Trooper",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "79"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BagDaddys Crossover",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BagDaddys Crossover 2.0",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BagDaddys Reject",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BagDaddys Series 3.0",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BagDaddys Teardrop",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BagDaddys Triple Threat",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BG Assassin",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BG Dark Slide 2.0",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BG Halo",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BG Mercenary",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "93"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BG Supernova",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "95"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BG Viking",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BG Warlock",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "BG Wizards",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "95"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Big Daddy Karnage",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Big Daddy Rival",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Big Daddy Ruckus",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "71"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Flag Black Pearl",
+				"Speed Friction Fastest Side": "99",
+				"Speed Friction Other Side": "96"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Flag Bounty",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Flag Cannon",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "78"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Flag Cutlass",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "92"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Flag Hornswaggle",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "79"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Flag Pillage",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Flag Plunder",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "92"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Sheep Black Water",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Sheep Costello",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Black Sheep OG",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "96"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Board Men Fast Max",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "81"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Board Men Fast Max Go",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "73"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Board Men Go Slide",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "78"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Board Men Maxnificent",
+				"Speed Friction Fastest Side": "88",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Board Men Maxnificent Go",
+				"Speed Friction Fastest Side": "84",
+				"Speed Friction Other Side": "76"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Board Men Pro Performance",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Board Men Pro Performance Go",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "76"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Board Men Rugburn",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Ambush",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Conflict",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Deadheads",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "73"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Fallout X",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Fathom",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Fathom Carpet",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Lava",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "92"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Lava Carpet",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards M1 Carpet Ride",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Rolling Blackout",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Buffalo Boards Zia",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "C3 Bags Highlander",
+				"Speed Friction Fastest Side": "85",
+				"Speed Friction Other Side": "79"
+			},
+			{
+				"Bag Manufacturer / Series Name": "C3 Bags Kilt",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "80"
+			},
+			{
+				"Bag Manufacturer / Series Name": "C3 Bags Lumberjack",
+				"Speed Friction Fastest Side": "86",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "C3 Bags Monarch",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "74"
+			},
+			{
+				"Bag Manufacturer / Series Name": "C3 Bags Sasquatch",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "73"
+			},
+			{
+				"Bag Manufacturer / Series Name": "C3 Bags Sybrant",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Chicali  Pathfinder",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "72"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Chicali  Baja",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Chicali  Rattler",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "67"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Bengal",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "92"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Cat 1",
+				"Speed Friction Fastest Side": "74",
+				"Speed Friction Other Side": "72"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Cat 3",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Cat 5",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "92"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Friction X",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "69"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Jaguar",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Kanga X",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Liger",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Lynx",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Panther",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "68"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario PGL",
+				"Speed Friction Fastest Side": "100",
+				"Speed Friction Other Side": "96"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Sabotage",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Savage",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Serval",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Scenario Toyger",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Solutions Character 00",
+				"Speed Friction Fastest Side": "84",
+				"Speed Friction Other Side": "5"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Solutions Character 77",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "77"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Solutions Character 99",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "81"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Solutions Honesty 55",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Solutions Integrity 22",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "0"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Solutions Loyalty 33",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Solutions Respect 44",
+				"Speed Friction Fastest Side": "85",
+				"Speed Friction Other Side": "77"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Cornhole Solutions Work Ethic 11",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "94"
+			},
+			{
+				"Bag Manufacturer / Series Name": "DragginBags Beast",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "DragginBags Double",
+				"Speed Friction Fastest Side": "88",
+				"Speed Friction Other Side": "79"
+			},
+			{
+				"Bag Manufacturer / Series Name": "DragginBags Inferno",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "DragginBags Nome",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "DragginBags RNA",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "81"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Feist Aftermath",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "78"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Feist Slinger",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire 11.5",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Accelerator",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Assault",
+				"Speed Friction Fastest Side": "83",
+				"Speed Friction Other Side": "64"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Blaze",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "81"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Control",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "78"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Ember",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Flame",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Heat",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "81"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Incinerator",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Spark",
+				"Speed Friction Fastest Side": "83",
+				"Speed Friction Other Side": "66"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire  Starter",
+				"Speed Friction Fastest Side": "85",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Torch",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "81"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fire Vengeance",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "69"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fly Banshee",
+				"Speed Friction Fastest Side": "88",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fly Magic",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Fly Surge",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator Battle Cheetah",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "80"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator Battle Cheetah Pro BB-1",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "78"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator Battle Cheetah Predator V2",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "28"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator Empire",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "33"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator Equalizer Pro VIII",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "79"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator King Cheetah Pro VIII",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator Maximus Comp VIII",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "94"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator Mayhem Pro BB-1",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator Pro Dagger VIII",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Gladiator Trident Pro VIII",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots Cannon",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots MOB",
+				"Speed Friction Fastest Side": "88",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots Gen 2 Predator",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots Gen 2 Slayer",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots Gen 2 Villain",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots Katana",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots MP5",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "92"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots Napalm",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "78"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots P90",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots Phantom",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots Sikario",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Killshots Uzis",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Kontraband Kombat",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Kontraband Kutthroat",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Local 450",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "0"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Local Challenger",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Local Champion",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Local Demon",
+				"Speed Friction Fastest Side": "86",
+				"Speed Friction Other Side": "75"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Local Hustler-X",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "93"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Local Legend",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Local Outlaw",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "74"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Local Regulator",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Local Bags Cougars",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "58"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Lone Star Revolver",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Low Life Loki",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "93"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Low Life Scythe",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Lucky Bags Flex",
+				"Speed Friction Fastest Side": "86",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Lucky Pro Sniper",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Lucky Shamrock",
+				"Speed Friction Fastest Side": "86",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Lucky Bags Surefire",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "70"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Magnum Double Slick",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Magnum Magma",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "74"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Magnum Sword and Sheild Pro",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Minnesota Tailgate Delta",
+				"Speed Friction Fastest Side": "78",
+				"Speed Friction Other Side": "77"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Mutha Shuckers 248",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "7"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Mutha Shuckers 313",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Mutha Shuckers 517",
+				"Speed Friction Fastest Side": "88",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Mutha Shuckers 586",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Mutha Shuckers 911",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Mutha Shuckers 989",
+				"Speed Friction Fastest Side": "88",
+				"Speed Friction Other Side": "79"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Mutha Shuckers Nightmare",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Nola Hurricane Category 3",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Nola Hurricane Category 4",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Nola Hurricane Category 5",
+				"Speed Friction Fastest Side": "100",
+				"Speed Friction Other Side": "93"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Nola Gator",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "94"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Nola Mudbug",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "93"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Nola Rougarou",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "92"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Oktane Apex",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "27"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Oktane Apex SS",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Oktane Boosted",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "47"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Oktane Energy",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Oktane Ignition",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "27"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Oktane Kinetik",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Oktane Nitro",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "92"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Oktane Turbo",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "76"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Oktane Turbo SS",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "75"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Rare Breed Cartel",
+				"Speed Friction Fastest Side": "71",
+				"Speed Friction Other Side": "71"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Rare Breed Vixen",
+				"Speed Friction Fastest Side": "99",
+				"Speed Friction Other Side": "98"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Razor Mohawk",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "81"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Razor Mohawk F",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "81"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Razor Rain",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "81"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Razor Rampage",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Razor Spear",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "80"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Razor Tusk",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Razor War Pig",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Razor War Pig F",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Carpet",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "93"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Lightning",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Patriot",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Platinum",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Pro Advantage",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Pro Excel",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Pro X",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Pro-AV",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Thunder",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "77"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Typhoon",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "79"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Reynolds Victory",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "80"
+			},
+			{
+				"Bag Manufacturer / Series Name": "SEVA Hypernova",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "73"
+			},
+			{
+				"Bag Manufacturer / Series Name": "SEVA Marksmen",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "64"
+			},
+			{
+				"Bag Manufacturer / Series Name": "SEVA Serpent",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "SEVA Siege",
+				"Speed Friction Fastest Side": "88",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Sling Shot Executioner",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Sling Shot Punisher",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Sling Shot Snappy",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Strive Caiman",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "74"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Strive Mufasa",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Strive Tarzan",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "93"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Sure Shot Destroyer",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "95"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Sure Shot Destroyer",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "95"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Sure Shot Diablo",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Sure Shot Dynamic",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "96"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Sure Shot Raid",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "93"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Sure Shot Cornhole Loco",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "93"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Swag Bags Shazam!",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "70"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Swagger Diamond",
+				"Speed Friction Fastest Side": "85",
+				"Speed Friction Other Side": "71"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Swagger DK",
+				"Speed Friction Fastest Side": "85",
+				"Speed Friction Other Side": "82"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Swagger Emerald",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "79"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Swagger Fantasy",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Swagger Ruby",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Swagger Sapphire",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Swagger Wicked",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tampa Bay Cornhole Icky Sticky",
+				"Speed Friction Fastest Side": "84",
+				"Speed Friction Other Side": "51"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tampa Bay Cornhole Pineapple Express",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tampa Bay Cornhole Smokin J's",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "97"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tampa Bay Cornhole X-Factor",
+				"Speed Friction Fastest Side": "88",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "TC Boards Hokahey",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "TC Boards Monsta",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "TC Boards Rekall",
+				"Speed Friction Fastest Side": "86",
+				"Speed Friction Other Side": "37"
+			},
+			{
+				"Bag Manufacturer / Series Name": "TC Boards Revolution",
+				"Speed Friction Fastest Side": "93",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "TC Boards Slow Burn",
+				"Speed Friction Fastest Side": "86",
+				"Speed Friction Other Side": "80"
+			},
+			{
+				"Bag Manufacturer / Series Name": "TC Boards War Cheif",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Devastator",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Grizzly",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Intimidator",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Juggernaut",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Nightmare",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Prowler",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Ravager Fury",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "94"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Stampede",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Swarm",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Terror",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Undertaker",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Titan Venom",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "78"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tosstek Commander",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tosstek Impulse",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "61"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tosstek Logo 2.0",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tosstek Silence",
+				"Speed Friction Fastest Side": "86",
+				"Speed Friction Other Side": "75"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tosstek Teleport",
+				"Speed Friction Fastest Side": "94",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Tosstek Velocity",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "94"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Butter",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "73"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Psycho",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "95"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Psycho X",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "77"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Vapor-R",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Viper",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Viper R",
+				"Speed Friction Fastest Side": "99",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Viper-B",
+				"Speed Friction Fastest Side": "98",
+				"Speed Friction Other Side": "74"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Viper-C",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Widow ",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Widow-B",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "77"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Widow-R",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "91"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Ultra Widow-X",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "75"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Vortex Shelter v2",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "76"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Vortex Twister",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "86"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Vortex Zone",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "West Georgia Maverick",
+				"Speed Friction Fastest Side": "90",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "WTF Bravo",
+				"Speed Friction Fastest Side": "89",
+				"Speed Friction Other Side": "84"
+			},
+			{
+				"Bag Manufacturer / Series Name": "WTF Delta",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "87"
+			},
+			{
+				"Bag Manufacturer / Series Name": "WTF Echo",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "94"
+			},
+			{
+				"Bag Manufacturer / Series Name": "WTF Foxtrot Pro",
+				"Speed Friction Fastest Side": "87",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "WTF Tango Pro",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "WTF Whiskey Pro",
+				"Speed Friction Fastest Side": "95",
+				"Speed Friction Other Side": "83"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Young Guns Hooligans",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "74"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Young Guns Menace",
+				"Speed Friction Fastest Side": "96",
+				"Speed Friction Other Side": "90"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Young Guns Phenom",
+				"Speed Friction Fastest Side": "97",
+				"Speed Friction Other Side": "88"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Zero Gravity Gravity 1",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "85"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Zero Gravity Neptune",
+				"Speed Friction Fastest Side": "91",
+				"Speed Friction Other Side": "89"
+			},
+			{
+				"Bag Manufacturer / Series Name": "Zero Gravity Pendulum",
+				"Speed Friction Fastest Side": "92",
+				"Speed Friction Other Side": "88"
+			}
+		]
+	}
+}

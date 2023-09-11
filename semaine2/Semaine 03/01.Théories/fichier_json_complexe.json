@@ -1,0 +1,24 @@
+{
+    "personnes": [
+        {
+            "nom": "Alice",
+            "age": 28,
+            "ville": "Paris"
+        },
+        {
+            "nom": "Bob",
+            "age": 32,
+            "ville": "New York"
+        }
+    ],
+    "projets": {
+        "projet1": {
+            "nom": "Application Web",
+            "technologies": ["HTML", "CSS", "JavaScript"]
+        },
+        "projet2": {
+            "nom": "Application Mobile",
+            "technologies": ["React Native", "Java"]
+        }
+    }
+}
