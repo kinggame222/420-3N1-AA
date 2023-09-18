@@ -26,9 +26,6 @@ def afficherSeriesName(donne):
     data = lirejson(donne)
     bag_data = data['data']['data']
 
-    data = lirejson(donne)
-    bag_data = data['data']['data']
-
     df = pd.DataFrame(bag_data)
 
     TEST = df['Bag Manufacturer / Series Name'].str.split(' ', n=1, expand=True)

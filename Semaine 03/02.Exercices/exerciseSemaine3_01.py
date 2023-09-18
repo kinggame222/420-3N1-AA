@@ -21,9 +21,8 @@ def convertirLignesEnListe(lignes):
     for ligne in lignes:
         elements = ligne.split("\t")
         for item in elements:
-            item = item.split(" ")
-            updated_list = ' '.join(item).split()
-            liste.append(updated_list)
+            nouvelle_liste = ' '.join(item.split(' ')).split()
+            liste.append(nouvelle_liste)
     return liste
 
 
@@ -38,6 +37,7 @@ def villePlusFrequente(liste):
     villes = []
     for item in liste:
         villes.append(item[2])
+
     return max(set(villes), key=villes.count)
 
 
