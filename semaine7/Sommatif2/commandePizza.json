@@ -1,0 +1,66 @@
+{
+    "facture-1": {
+        "nom": "Paul",
+        "adresse": "15 rue Gauthier, Alma",
+        "courriel": "",
+        "telephone": "418-668-2387",
+        "quantite": 2,
+        "dimension": "moyenne",
+        "assaisonnement": [
+            false,
+            false,
+            false,
+            false
+        ],
+        "delais": "15 minutes",
+        "total": 27.57
+    },
+    "facture-2": {
+        "Nom": "wi",
+        "Adresse": "",
+        "Courriel": "",
+        "Telephone": "12345",
+        "Quantite": "1",
+        "Dimension": 2,
+        "Assaisonnement": [
+            1,
+            1,
+            1,
+            0
+        ],
+        "Temps": "15 minutes",
+        "Total": "14.94"
+    },
+    "facture-3": {
+        "Nom": "1",
+        "Adresse": "",
+        "Courriel": "",
+        "Telephone": "1",
+        "Quantite": "1",
+        "Dimension": 1,
+        "Assaisonnement": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "Temps": "1 heure",
+        "Total": "8.9"
+    },
+    "facture-4": {
+        "Nom": "wertyu8i9",
+        "Adresse": "",
+        "Courriel": "",
+        "Telephone": "111",
+        "Quantite": "25",
+        "Dimension": 1,
+        "Assaisonnement": [
+            1,
+            0,
+            1,
+            1
+        ],
+        "Temps": "15 minutes",
+        "Total": "265.59"
+    }
+}

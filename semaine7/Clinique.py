@@ -145,6 +145,7 @@ def sauvegarder():
     btnGauche.configure(state="normal")
     btnGauchex2.configure(state="normal")
     btnAjouter.configure(text="Ajouter", command=ajouter)
+
     pass
 
 
