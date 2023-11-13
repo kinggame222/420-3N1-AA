@@ -1,0 +1,2 @@
+2023-11-13 10:08:29,650 - root - INFO - Erreur dans la modification d'un joueur : no such column: bob
+2023-11-13 10:09:29,277 - root - INFO - Erreur dans la modification d'un joueur : no such column: bob
