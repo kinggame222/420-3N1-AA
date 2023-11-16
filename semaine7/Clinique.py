@@ -1,52 +1,206 @@
+from datetime import datetime
 from tkinter import *
-from tkinter import ttk, messagebox
+from tkinter import messagebox
 
 from tkcalendar import DateEntry
 
 from semaine7 import hopital
-import json
+
+base = 2
 
 
-def lirefichier():
-    valeur = []
-    with open("employe.json", "r") as f:
-        valeur = json.load(f)
-    return valeur
-
-
-base = 1
-
-
+# Fonction pour gérer le choix de l'utilisateur
 def choix(bouton):
     global base
+
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
+
+    curseur.execute("SELECT COUNT(*) FROM employe")
+    nombre_enregistrements = curseur.fetchone()[0]
+    if nombre_enregistrements <= 1:
+        btnDroite.config(state="disabled")
+        btnDroite2.config(state="disabled")
+    else:
+        btnDroite.config(state="normal")
+        btnDroite2.config(state="normal")
+
     if bouton == "gauche":
         base = int(base - 1)
 
     elif bouton == "gauche2":
-        base = 1
+        curseur.execute("SELECT * FROM employe limit 1")
+        base = curseur.fetchone()[0]
     elif bouton == "droite":
         base = int(base + 1)
     elif bouton == "droite2":
-        base = list(lirefichier().keys())[-1]
+        curseur.execute("SELECT MAX(id) FROM employe")
+        base = curseur.fetchone()[0]
     else:
         base = base
     return base
 
-
+# Fonction pour valider les informations de l'utilisateur
 def valider():
-    with open("usager.txt", "r") as f:
-        valeur = f.readlines()
+    # Connexion à la base de données SQLite
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
 
-    if hopital.txtNom.get() == valeur[0].strip('\n') and hopital.txtMDP.get() == valeur[1]:
+    # Récupération du nom d'utilisateur et du mot de passe saisis
+    nom_utilisateur_saisi = hopital.txtNom.get()
+    mot_de_passe_saisi = hopital.txtMDP.get()
+
+    # Requête SQL pour récupérer les informations de l'utilisateur à partir de la base de données
+    curseur.execute("SELECT Usager, MotDePasse FROM Emp WHERE Usager = ?", (nom_utilisateur_saisi,))
+    resultat = curseur.fetchone()
+
+    # Fermeture de la connexion à la base de données
+    connexion.close()
+
+    # Vérification que l'utilisateur existe dans la base de données et que le mot de passe est correct
+    if resultat is not None and resultat[0] == nom_utilisateur_saisi and resultat[1] == mot_de_passe_saisi:
         hopital.window.destroy()
     else:
         messagebox.showerror("Erreur", "Nom d'usager ou mot de passe invalide")
 
 
+import sqlite3
+
+# Fonction pour créer une connexion à la base de données SQLite
+
+def creer_connexion():
+    # Créer une connexion à la base de données SQLite
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    # Créer un objet curseur
+    curseur = connexion.cursor()
+    # Retourner la connexion et le curseur
+    return connexion, curseur
+
+# Fonction pour mettre l'application en mode consultation
+
+def mode_consultation():
+    # Désactiver tous les champs du formulaire
+    txtNom.config(state="disabled")
+    txtAddre.config(state="disabled")
+    txtTel.config(state="disabled")
+    txtDate.config(state="disabled")
+    txtNum.config(state="disabled")
+    opt_1.config(state="disabled")
+    opt_2.config(state="disabled")
+    opt_3.config(state="disabled")
+    opt_4.config(state="disabled")
+    chk1.config(state="disabled")
+    chk2.config(state="disabled")
+    chk3.config(state="disabled")
+
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
+
+    # Lire le premier enregistrement de la table employe
+    curseur.execute("SELECT * FROM employe ORDER BY id LIMIT 1")
+    enregistrement = curseur.fetchone()
+    if enregistrement is not None:
+        # Afficher l'enregistrement dans le formulaire
+        txtNum.insert(0, enregistrement[0])
+        txtNom.insert(0, enregistrement[1])
+        txtAddre.insert(0, enregistrement[2])
+        txtTel.insert(0, enregistrement[3])
+        txtDate.set_date(enregistrement[4])
+        radiobtn.set(enregistrement[5])
+        dispo = list(map(bool, map(int, enregistrement[6].split(','))))
+        if dispo[0]: chk1.select()
+        if dispo[1]: chk2.select()
+        if dispo[2]: chk3.select()
+
+    # Gérer l'activation/désactivation des boutons
+    btnAjouter.config(state="normal")
+    btnModifier.config(state="normal")
+    btnSupprimer.config(state="normal")
+    btnQuitter.config(state="normal")
+    btnGauchex2.config(state="disabled")
+    btnGauche.config(state="disabled")
+    curseur.execute("SELECT COUNT(*) FROM employe")
+    nombre_enregistrements = curseur.fetchone()[0]
+    if nombre_enregistrements <= 1:
+        btnDroite.config(state="disabled")
+        btnDroite2.config(state="disabled")
+    else:
+        btnDroite.config(state="normal")
+        btnDroite2.config(state="normal")
+
+# Fonction pour ajouter un nouvel enregistrement
+
+def ajouter():
+    # Effacer tous les champs du formulaire
+    txtNom.delete(0, END)
+    txtAddre.delete(0, END)
+    txtTel.delete(0, END)
+    txtDate.delete(0, END)
+    txtNum.delete(0, END)
+
+    # Activer tous les champs du formulaire (sauf le numéro d'employé)
+    txtNom.config(state="normal")
+    txtAddre.config(state="normal")
+    txtTel.config(state="normal")
+    txtDate.config(state="normal")
+    opt_1.config(state="normal")
+    opt_2.config(state="normal")
+    opt_3.config(state="normal")
+    opt_4.config(state="normal")
+    chk1.config(state="normal")
+    chk2.config(state="normal")
+    chk3.config(state="normal")
+
+    # Mettre le focus sur le champ Nom
+    txtNom.focus()
+
+    # Désactiver les boutons de navigation
+    btnGauchex2.config(state="disabled")
+    btnGauche.config(state="disabled")
+    btnDroite.config(state="disabled")
+    btnDroite2.config(state="disabled")
+
+    # Modifier le texte des boutons AJOUTER et MODIFIER
+    btnAjouter.config(text="ENREGISTRER", command=enregistrer)
+    btnModifier.config(text="ANNULER", command=mode_consultation)
+
+
+def enregistrer():
+    # Ajouter les données du formulaire à la table employe
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
+    nom = txtNom.get()
+    adresse = txtAddre.get()
+    telephone = txtTel.get()
+    dateNaissance = txtDate.get()
+    salaire = radiobtn.get()
+    dispo = [var1.get(), var2.get(), var3.get()]
+    # ville = txtVille.get()  # Assuming txtVille is a field in your form
+    curseur.execute('''
+        INSERT INTO employe (nom, adresse, telephone, dateNaissance, salaire, dispo)
+        VALUES (?, ?, ?, ?, ?, ?)
+    ''', (nom, adresse, telephone, dateNaissance, salaire, ','.join(map(str, dispo))))
+    connexion.commit()
+
+    # Revenir en mode consultation
+    mode_consultation()
+
+
 def afficher(bouton):
-    valeur = lirefichier()
-    str_base = str(choix(bouton))  # Convertissez base en chaîne de caractères
-    if str_base in valeur:
+    # Connexion à la base de données SQLite
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
+
+    base = choix(bouton)
+
+    # Exécution d'une requête SQL pour récupérer l'enregistrement correspondant à base
+    curseur.execute("SELECT * FROM employe WHERE id = ?", (base,))
+    enregistrement = curseur.fetchone()
+
+    # Fermeture de la connexion à la base de données
+    connexion.close()
+
+    if enregistrement is not None:
         txtNom.config(state="normal")
         txtAddre.config(state="normal")
         txtTel.config(state="normal")
@@ -62,21 +216,27 @@ def afficher(bouton):
         txtDate.delete(0, END)
         txtNum.delete(0, END)
 
-        txtNom.insert(0, valeur[str_base]["nom"])
-        txtAddre.insert(0, valeur[str_base]["adresse"])
-        txtTel.insert(0, valeur[str_base]["telephone"])
-        txtDate.insert(0, valeur[str_base]["dateNaissance"])
-        txtNum.insert(0, base)
-        radiobtn.set(valeur[str_base]["salaire"])
-        if valeur[str_base]["salaire"] == 0:
+        txtNom.insert(0, enregistrement[1])
+        txtAddre.insert(0, enregistrement[2])
+        txtTel.insert(0, enregistrement[4])
+        # Convert the date to 'd/m/y' format before inserting it into txtDate
+        txtNum.insert(0, enregistrement[0])  # Insert the id into txtNum
+        radiobtn.set(enregistrement[5])
+        if enregistrement[5] == 0:
             opt_1.select()
-        val = valeur[str_base]["dispo"]
-        if val[0] == 1:
-            chk1.select()
-        if val[1] == 1:
-            chk2.select()
-        if val[2] == 1:
-            chk3.select()
+        if isinstance(enregistrement[6], int):
+            dispo = [bool(enregistrement[6])]
+        else:
+            dispo = list(map(bool, map(int, enregistrement[6].split(','))))
+        # Ensure dispo has at least three elements
+        while len(dispo) < 3:
+            dispo.append(False)
+        if dispo[0]: chk1.select()
+        if dispo[1]: chk2.select()
+        if dispo[2]: chk3.select()
+        # Convert the date string to a datetime.date object before formatting it
+        dateNaissance = datetime.strptime(enregistrement[5], '%Y-%m-%d').date()
+        txtDate.insert(0, dateNaissance.strftime('%d/%m/%Y'))
 
         txtNom.config(state="readonly")
         txtAddre.config(state="readonly")
@@ -86,6 +246,10 @@ def afficher(bouton):
 
 
 def ajouter():
+    # Connexion à la base de données SQLite
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
+
     txtNom.config(state="normal")
     txtAddre.config(state="normal")
     txtTel.config(state="normal")
@@ -98,7 +262,12 @@ def ajouter():
     txtDate.delete(0, END)
     txtNum.delete(0, END)
 
-    nnum = int(list(lirefichier().keys())[-1]) + 1
+    # Exécution d'une requête SQL pour récupérer le dernier id de la table employe
+    curseur.execute("SELECT MAX(id) FROM employe")
+    dernier_id = curseur.fetchone()[0]
+    if dernier_id is None:
+        dernier_id = 0  # Si la table est vide, on commence à 1
+    nnum = dernier_id + 1
     txtNum.insert(0, nnum)
     txtNom.focus()
     btnDroite.configure(state="disabled")
@@ -106,109 +275,141 @@ def ajouter():
     btnGauche.configure(state="disabled")
     btnGauchex2.configure(state="disabled")
 
-    btnAjouter.configure(text="Sauvegarder", command=sauvegarder)
+    btnAjouter.configure(text="Sauvegarder", command=enregistrer)
 
-    pass
+    # Fermeture de la connexion à la base de données
+    connexion.close()
 
 
-def sauvegarder():
-    valeur = lirefichier()
+def mode_consultation():
+    # Désactiver tous les champs du formulaire
+    txtNom.config(state="disabled")
+    txtAddre.config(state="disabled")
+    txtTel.config(state="disabled")
+    txtDate.config(state="disabled")
+    txtNum.config(state="disabled")
+    opt_1.config(state="disabled")
+    opt_2.config(state="disabled")
+    opt_3.config(state="disabled")
+    opt_4.config(state="disabled")
+    chk1.config(state="disabled")
+    chk2.config(state="disabled")
+    chk3.config(state="disabled")
 
-    str_base = int(choix("droite2"))
-    str_base += 1
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
 
-    valeur[str_base] = {}
-    valeur[str_base]["nom"] = txtNom.get()
-    valeur[str_base]["adresse"] = txtAddre.get()
-    valeur[str_base]["telephone"] = txtTel.get()
-    valeur[str_base]["dateNaissance"] = txtDate.get()
-    valeur[str_base]["salaire"] = radiobtn.get()
-    val = [0, 0, 0]
-    if var1.get() == 1:
-        val[0] = True
+    # Lire le premier enregistrement de la table employe
+    curseur.execute("SELECT * FROM employe ORDER BY id LIMIT 1")
+    enregistrement = curseur.fetchone()
+    if enregistrement is not None:
+        # Afficher l'enregistrement dans le formulaire
+        txtNum.insert(0, enregistrement[0])
+        txtNom.insert(0, enregistrement[1])
+        txtAddre.insert(0, enregistrement[2])
+        txtTel.insert(0, enregistrement[3])
+        txtDate.set_date(enregistrement[4])
+        radiobtn.set(enregistrement[5])
+        dispo = list(map(bool, map(int, enregistrement[6].split(','))))
+        if dispo[0]: chk1.select()
+        if dispo[1]: chk2.select()
+        if dispo[2]: chk3.select()
+
+    # Gérer l'activation/désactivation des boutons
+    btnAjouter.config(state="normal")
+    btnModifier.config(state="normal")
+    btnSupprimer.config(state="normal")
+    btnQuitter.config(state="normal")
+    btnGauchex2.config(state="disabled")
+    btnGauche.config(state="disabled")
+    curseur.execute("SELECT COUNT(*) FROM employe")
+    nombre_enregistrements = curseur.fetchone()[0]
+    if nombre_enregistrements <= 1:
+        btnDroite.config(state="disabled")
+        btnDroite2.config(state="disabled")
     else:
-        val[0] = False
-    if var2.get() == 1:
-        val[1] = True
-    else:
-        val[1] = False
-    if var3.get() == 1:
-        val[2] = True
-    else:
-        val[2] = False
-
-    valeur[str_base]["dispo"] = val
-    with open("employe.json", "w") as f:
-        json.dump(valeur, f)
-    btnDroite.configure(state="normal")
-    btnDroite2.configure(state="normal")
-    btnGauche.configure(state="normal")
-    btnGauchex2.configure(state="normal")
-    btnAjouter.configure(text="Ajouter", command=ajouter)
-
-    pass
+        btnDroite.config(state="normal")
+        btnDroite2.config(state="normal")
 
 
 def sauvegarderModif():
-    valeur = lirefichier()
-    str_base = str(base)
-    valeur[str_base]["nom"] = txtNom.get()
-    valeur[str_base]["adresse"] = txtAddre.get()
-    valeur[str_base]["telephone"] = txtTel.get()
-    valeur[str_base]["dateNaissance"] = txtDate.get()
-    valeur[str_base]["salaire"] = radiobtn.get()
-    val = [0, 0, 0]
-    if var1.get() == 1:
-        val[0] = True
-    else:
-        val[0] = False
-    if var2.get() == 1:
-        val[1] = True
-    else:
-        val[1] = False
-    if var3.get() == 1:
-        val[2] = True
-    else:
-        val[2] = False
+    # Connexion à la base de données SQLite
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
 
-    valeur[str_base]["dispo"] = val
-    with open("employe.json", "w") as f:
-        json.dump(valeur, f)
+    # Récupération des valeurs du formulaire
+    nom = txtNom.get()
+    adresse = txtAddre.get()
+    telephone = txtTel.get()
+    dateNaissance = txtDate.get()
+    salaire = radiobtn.get()
+    dispo = [var1.get(), var2.get(), var3.get()]
+    # ville = txtVille.get()  # Assuming txtVille is a field in your form
+    curseur.execute('''
+        UPDATE employe SET nom = ?, adresse = ?, telephone = ?, dateNaissance = ?, salaire = ?, dispo = ? WHERE id = ?
+    ''', (nom, adresse, telephone, dateNaissance, salaire, ','.join(map(str, dispo)), base))
+
+    # Validation des modifications
+    connexion.commit()
+
+    # Fermeture de la connexion à la base de données
+    connexion.close()
+
     btnDroite.configure(state="normal")
     btnDroite2.configure(state="normal")
     btnGauche.configure(state="normal")
     btnGauchex2.configure(state="normal")
     btnAjouter.configure(text="Ajouter", command=ajouter)
-    pass
 
 
 def modifier():
-    txtNom.config(state="normal")
-    txtAddre.config(state="normal")
-    txtTel.config(state="normal")
-    txtDate.config(state="normal")
-    txtNum.config(state="normal")
-    btnDroite.configure(state="disabled")
-    btnDroite2.configure(state="disabled")
-    btnGauche.configure(state="disabled")
-    btnGauchex2.configure(state="disabled")
-    btnAjouter.configure(text="Sauvegarder", command=sauvegarderModif)
+    # Connexion à la base de données SQLite
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
+
+    # Récupération des valeurs du formulaire
+    nom = txtNom.get()
+    adresse = txtAddre.get()
+    telephone = txtTel.get()
+    dateNaissance = txtDate.get_date()  # Assuming txtDate is a DateEntry widget
+    salaire = radiobtn.get()
+    dispo = [var1.get(), var2.get(), var3.get()]
+
+    # Conversion de la liste dispo en chaîne de caractères
+    dispo_str = ','.join(map(str, dispo))
+
+    # Exécution d'une requête SQL pour mettre à jour l'enregistrement correspondant à base
+    curseur.execute('''
+        UPDATE employe SET nom = ?, adresse = ?, telephone = ?, dateNaissance = ?, salaire = ?, dispo = ? WHERE id = ?
+    ''', (nom, adresse, telephone, dateNaissance, salaire, dispo_str, base))
+
+    # Validation des modifications
+    connexion.commit()
+
+    # Fermeture de la connexion à la base de données
+    connexion.close()
+
+    btnDroite.configure(state="normal")
+    btnDroite2.configure(state="normal")
+    btnGauche.configure(state="normal")
+    btnGauchex2.configure(state="normal")
+    btnAjouter.configure(text="Ajouter", command=ajouter)
 
 
 def supprimer():
-    valeur = lirefichier()
-    str_base = str(base)
-    try:
-        del valeur[str_base]
-    except KeyError:
-        print("Aucun employé n'est sélectionné")
-    try:
-        del valeur[base]
-    except KeyError:
-        print("Aucun employé n'est sélectionné")
+    # Connexion à la base de données SQLite
+    connexion = sqlite3.connect('../Semaine 11/02.Exercices/bd.sqlite')
+    curseur = connexion.cursor()
 
-    with open("employe.json", "w") as f:
-        json.dump(valeur, f)
+    # Exécution d'une requête SQL pour supprimer l'enregistrement correspondant à base
+    curseur.execute("DELETE FROM employe WHERE id = ?", (base,))
+
+    # Validation des modifications
+    connexion.commit()
+
+    # Fermeture de la connexion à la base de données
+    connexion.close()
+
     btnDroite.configure(state="normal")
     btnDroite2.configure(state="normal")
     btnGauche.configure(state="normal")
@@ -219,6 +420,7 @@ def supprimer():
 
 if __name__ == '__main__':
     window = Tk()
+    radiobtn = IntVar()
 
     window.title("Hopital d'Alma")
     window.geometry("800x400")
@@ -264,13 +466,14 @@ if __name__ == '__main__':
     txtTel = Entry(lblTitre, font=("Courrier", 20), justify="center", background=bg, width=15)
     txtTel.grid(row=3, column=1, padx=0, pady=0)
 
-    txtDate = DateEntry(lblTitre, font=("Courrier", 20), justify="center", background='black', width=10)
+    txtDate = DateEntry(lblTitre, font=("Courrier", 20), justify="center", background='black', width=10,
+                        date_pattern='d/m/y')
     txtDate.grid(row=4, column=1, padx=0, pady=13)
 
     lblTitre2 = LabelFrame(frmW, text="Échelle salarial", font=("Courrier", 20), background=bg)
     lblTitre2.grid(row=0, column=1, padx=5, pady=0, sticky="n")
 
-    radiobtn = IntVar()
+
     opt_1 = Radiobutton(lblTitre2, text="moins de 10 000$", font=("Courrier", 12), value=1, justify="left",
                         variable=radiobtn, background=bg)
     opt_1.grid(row=0, column=0, sticky="w", pady=0)
@@ -299,12 +502,12 @@ if __name__ == '__main__':
                        background=bg, variable=var1, onvalue=1, offvalue=0)
     chk1.grid(row=0, column=0, sticky="w", pady=5)
 
-    chk2 = Checkbutton(lblTitre3, text="16 h 00 à 00 h 00", font=("Courrier", 12), justify="left",
-                       background=bg, variable=var2, onvalue=1, offvalue=0)
+    chk2 = Checkbutton(lblTitre3, text="16 h 00 à 00 h 00", font=("Courrier", 12), justify="left", background=bg,
+                       variable=var2, onvalue=1, offvalue=0)
     chk2.grid(row=1, column=0, sticky="w", pady=4)
 
-    chk3 = Checkbutton(lblTitre3, text="00 h 00 à 8 h 00", font=("Courrier", 12), justify="left",
-                       background=bg, variable=var3, onvalue=1, offvalue=0)
+    chk3 = Checkbutton(lblTitre3, text="00 h 00 à 8 h 00", font=("Courrier", 12), justify="left", background=bg,
+                       variable=var3, onvalue=1, offvalue=0)
     chk3.grid(row=2, column=0, sticky="w", pady=0)
 
     btnframe = Frame(frmW)
