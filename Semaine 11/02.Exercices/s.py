@@ -1,22 +1,22 @@
-import socket
+import requests
+from bs4 import BeautifulSoup
 
-def list_connections():
-    # Obtenir le nom de l'hôte
-    host_name = socket.gethostname()
-    # Obtenir l'adresse IP
-    ip_address = socket.gethostbyname(host_name)
-    # Obtenir le dernier octet de l'adresse IP
-    last_octet = ip_address.split('.')[-1]
-    # Obtenir le préfixe de l'adresse IP
-    prefix = '.'.join(ip_address.split('.')[:-1])
-    # Parcourir toutes les adresses IP possibles dans le réseau local
-    for i in range(1, 2):
-        try:
-            # Obtenir le nom de l'hôte pour l'adresse IP actuelle
-            current_host_name = socket.gethostbyaddr(f"{prefix}.{i}")[0]
-            print(f"Adresse IP : {prefix}.{i}, Nom d'hôte : {current_host_name}")
-        except socket.herror:
-            # Ignorer les erreurs (c'est-à-dire les adresses IP sans nom d'hôte)
-            pass
+# Make a request to the website
+response = requests.get('https://rustoria.co/clans/QC%20TAKEOVER')
 
-list_connections()
+# Parse the HTML content
+soup = BeautifulSoup(response.content, 'html.parser')
+
+# Find all 'table' elements
+tables = soup.find_all('div')
+
+
+if len(tables) > 0:
+    # Print the text from each table
+    for table in tables:
+        print(table.get_text())
+
+
+# Print the text from each table
+for table in tables:
+    print(table.get_text())
