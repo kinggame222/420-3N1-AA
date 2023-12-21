@@ -99,5 +99,12 @@
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/semaine12/streaming.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="Hockeypool" uuid="ffb36462-e9ab-4553-9d00-7182a4c99a45">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/etc/BDpool/pool.sqlite</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
