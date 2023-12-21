@@ -1,0 +1,106 @@
+{
+  "1": {
+    "nom": "Nancy Bluteau",
+    "adresse": "675 boul. Auger Ouest",
+    "ville": "Alma",
+    "telephone": "418-668-2387",
+    "dateNaissance": "1985-11-26",
+    "salaire": 1,
+    "dispo": [
+      true,
+      false,
+      false
+    ]
+  },
+  "2": {
+    "nom": "Lyne Oléome",
+    "adresse": "823, avenue Clean",
+    "ville": "Jonquière",
+    "telephone": "418-668-2387",
+    "dateNaissance": "1985-11-26",
+    "salaire": 2,
+    "dispo": [
+      true,
+      true,
+      false
+    ]
+  },
+  "3": {
+    "nom": "Jean Tremblay",
+    "adresse": "123, rue Principale",
+    "ville": "Alma",
+    "telephone": "418-667-1234",
+    "dateNaissance": "1950-11-21",
+    "salaire": 0,
+    "dispo": [
+      true,
+      true,
+      true
+    ]
+  },
+  "4": {
+    "nom": "Marie Bouchard",
+    "adresse": "564, rue Bégin",
+    "ville": "Alma",
+    "telephone": "418-668-2387",
+    "dateNaissance": "1985-11-26",
+    "salaire": 2,
+    "dispo": [
+      true,
+      false,
+      true
+    ]
+  },
+  "5": {
+    "nom": "Marc Fortin",
+    "adresse": "6655, rue Roussel",
+    "ville": "St-Gédéon",
+    "telephone": "418-564-8989",
+    "dateNaissance": "1978-07-03",
+    "salaire": 1,
+    "dispo": [
+      false,
+      false,
+      true
+    ]
+  },
+  "6": {
+    "nom": "Carl Allard",
+    "adresse": "3453, rue DeVerdun",
+    "ville": "Métabetchouan",
+    "telephone": "418-765-8889",
+    "dateNaissance": "1979-04-30",
+    "salaire": 3,
+    "dispo": [
+      false,
+      true,
+      true
+    ]
+  },
+  "7": {
+    "nom": "Simon Carrier",
+    "adresse": "5252, rang St-Benoit",
+    "ville": "Saguenay",
+    "telephone": "418-676-5555",
+    "dateNaissance": "1980-02-04",
+    "salaire": 2,
+    "dispo": [
+      false,
+      true,
+      false
+    ]
+  },
+  "8": {
+    "nom": "Richard Bolduc",
+    "adresse": "123, rue Scott Ouest",
+    "ville": "Alma",
+    "telephone": "418-852-0000",
+    "dateNaissance": "2002-11-30",
+    "salaire": 0,
+    "dispo": [
+      false,
+      false,
+      true
+    ]
+  }
+}

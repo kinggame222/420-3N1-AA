@@ -1,0 +1,72 @@
+[
+    {
+        "Nom": "Maurice Richard",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 544,
+        "Passes": 421,
+        "Points": 965
+    },
+    {
+        "Nom": "Guy Lafleur",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 518,
+        "Passes": 728,
+        "Points": 1246
+    },
+    {
+        "Nom": "Jean Béliveau",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 507,
+        "Passes": 712,
+        "Points": 1219
+    },
+    {
+        "Nom": "Bernard Geoffrion",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 393,
+        "Passes": 429,
+        "Points": 822
+    },
+    {
+        "Nom": "Yvan Cournoyer",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 428,
+        "Passes": 435,
+        "Points": 863
+    },
+    {
+        "Nom": "Larry Robinson",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 208,
+        "Passes": 750,
+        "Points": 958
+    },
+    {
+        "Nom": "Jacques Lemaire",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 366,
+        "Passes": 469,
+        "Points": 835
+    },
+    {
+        "Nom": "Guy Carbonneau",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 267,
+        "Passes": 403,
+        "Points": 670
+    },
+    {
+        "Nom": "Steve Shutt",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 408,
+        "Passes": 368,
+        "Points": 776
+    },
+    {
+        "Nom": "Saku Koivu",
+        "Equipe": "Canadiens de Montréal",
+        "Buts": 191,
+        "Passes": 450,
+        "Points": 641
+    }
+]

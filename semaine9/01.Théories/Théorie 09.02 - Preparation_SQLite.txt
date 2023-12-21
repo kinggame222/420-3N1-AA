@@ -1,0 +1,39 @@
+1.  Téléchargement de SQLite :
+    Rendez-vous sur le site officiel de SQLite à l'adresse https://sqlite.org/download.html en utilisant votre
+    navigateur web.
+
+2.  Télécharger la version précompilée : sqlite-tools-win32-x86-3430100.zip
+    Sous la section "Precompiled Binaries for Windows" (Binaires précompilés pour Windows), téléchargez la version de
+    SQLite qui vous convient. Vous verrez des options pour la version 32 bits (x86) et 64 bits (x64). Si vous avez un
+    système Windows 64 bits (ce qui est courant pour Windows 11), vous pouvez télécharger la version 64 bits.
+
+3.  Décompression des fichiers :
+    Une fois le fichier téléchargé (généralement sous la forme d'un fichier ZIP), décompressez-le dans
+    un dossier : c:\sqlite
+    Vous obtiendrez un ensemble de fichiers, dont le principal est "sqlite3.exe".
+
+4.  Ajout de SQLite au PATH (optionnel) :
+    Pour utiliser SQLite plus facilement depuis l'invite de commandes Windows, vous pouvez ajouter le chemin vers le
+    dossier contenant "sqlite3.exe" au PATH de votre système. Pour ce faire, suivez ces étapes :
+    -   Dans la barre de recherche: Modifier les variables d'environnement système.
+    -   Cliquez sur le bouton "Variables d'environnement" en bas de la fenêtre Propriétés système.
+    -   Sous "Variables système", recherchez la variable "Path" (ou "PATH") et double-cliquez dessus.
+    -   Cliquez sur "Nouveau" et ajoutez le chemin complet du dossier contenant "sqlite3.exe".
+        Par exemple, si vous avez extrait les fichiers dans "C:\sqlite", ajoutez "C:\sqlite" au PATH.
+    -   Cliquez sur "OK" pour fermer toutes les fenêtres.
+
+5.  Vérification de l'installation :
+    Pour vérifier que SQLite a été installé correctement, ouvrez l'invite de commandes (Recherchez "cmd" dans la barre
+    de recherche Windows) et tapez la commande suivante :
+
+        sqlite3 --version
+
+    Vous devriez voir la version de SQLite affichée à l'écran, ce qui confirme que SQLite a été installé avec succès.
+
+6.  Créer la base de données
+    Positionnez-vous à la bonne place dans votre invite de commande et utilisez la commande suivante pour créer une
+    nouvelle base de données SQLite. Remplacez "nom_de_la_base_de_donnees" par le nom que vous souhaitez donner:
+
+        1.      sqlite3 nom_de_la_base_de_donnees.sqlite
+        2.      .databases
+        3.      .quit

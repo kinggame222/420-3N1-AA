@@ -1,0 +1,42 @@
+[
+    {
+        "Nom": "Maurice Richard",
+        "Position": "Attaquant"
+    },
+    {
+        "Nom": "Guy Lafleur",
+        "Position": "Attaquant"
+    },
+    {
+        "Nom": "Jean Béliveau",
+        "Position": "Attaquant"
+    },
+    {
+        "Nom": "Bernard Geoffrion",
+        "Position": "Attaquant"
+    },
+    {
+        "Nom": "Yvan Cournoyer",
+        "Position": "Attaquant"
+    },
+    {
+        "Nom": "Larry Robinson",
+        "Position": "Défenseur"
+    },
+    {
+        "Nom": "Jacques Lemaire",
+        "Position": "Attaquant"
+    },
+    {
+        "Nom": "Guy Carbonneau",
+        "Position": "Attaquant"
+    },
+    {
+        "Nom": "Steve Shutt",
+        "Position": "Attaquant"
+    },
+    {
+        "Nom": "Saku Koivu",
+        "Position": "Attaquant"
+    }
+]
